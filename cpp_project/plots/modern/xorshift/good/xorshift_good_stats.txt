@@ -1,0 +1,11 @@
+Good Xorshift32
+min: 95574
+max: 4294936387
+mean: 2154179180.488110
+variance: 1536167166439428352.000000
+stddev: 1239422109.871947
+zero count: 0
+one bits: 1600796
+total bits: 3200000
+one bit ratio: 0.500249
+chi-square: 15.141200

@@ -1,0 +1,11 @@
+Good Combined Generator
+min: 38608
+max: 2147465310
+mean: 1073039396.737200
+variance: 385159406453878080.000000
+stddev: 620612122.387146
+zero count: 0
+one bits: 1550268
+total bits: 3100000
+one bit ratio: 0.500086
+chi-square: 8.186000

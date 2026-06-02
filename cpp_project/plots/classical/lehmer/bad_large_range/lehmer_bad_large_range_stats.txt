@@ -1,0 +1,11 @@
+Bad large-range Lehmer
+min: 123456789
+max: 2024026858
+mean: 1073741823.500000
+variance: 903041646794666624.000000
+stddev: 950285034.500000
+zero count: 0
+one bits: 1550000
+total bits: 3100000
+one bit ratio: 0.500000
+chi-square: 900000.000000

@@ -1,0 +1,11 @@
+LCG with even increment
+min: 18045
+max: 2147483589
+mean: 1072768794.752960
+variance: 382909860665039168.000000
+stddev: 618797107.835063
+zero count: 0
+one bits: 1549075
+total bits: 3100000
+one bit ratio: 0.499702
+chi-square: 14.920800

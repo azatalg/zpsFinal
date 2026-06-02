@@ -1,0 +1,11 @@
+Good Lehmer
+min: 930
+max: 2147479582
+mean: 1074185909.163440
+variance: 386790751119074432.000000
+stddev: 621925036.575209
+zero count: 0
+one bits: 1548782
+total bits: 3100000
+one bit ratio: 0.499607
+chi-square: 15.389600

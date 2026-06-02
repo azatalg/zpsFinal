@@ -1,0 +1,11 @@
+LFSR with one missing tap
+min: 31
+max: 65493
+mean: 32656.412080
+variance: 364714062.292330
+stddev: 19097.488377
+zero count: 0
+one bits: 797289
+total bits: 1600000
+one bit ratio: 0.498306
+chi-square: 407.812800

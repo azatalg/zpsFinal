@@ -1,0 +1,11 @@
+Good LCG
+min: 14984
+max: 2147472790
+mean: 1072058253.992800
+variance: 382894601158474560.000000
+stddev: 618784777.736552
+zero count: 0
+one bits: 1549900
+total bits: 3100000
+one bit ratio: 0.499968
+chi-square: 17.200400

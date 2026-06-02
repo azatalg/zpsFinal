@@ -1,0 +1,11 @@
+Bad large-range Xorshift32
+min: 123456789
+max: 4204257784
+mean: 2162503435.718750
+variance: 1250654853398311168.000000
+stddev: 1118326809.746736
+zero count: 0
+one bits: 1631250
+total bits: 3200000
+one bit ratio: 0.509766
+chi-square: 107031.250000

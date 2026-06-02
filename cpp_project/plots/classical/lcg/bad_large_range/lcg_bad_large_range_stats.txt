@@ -1,0 +1,11 @@
+Bad large-range LCG
+min: 26007
+max: 2147458605
+mean: 1073741022.555520
+variance: 383353162415633472.000000
+stddev: 619155200.588377
+zero count: 0
+one bits: 1650219
+total bits: 3100000
+one bit ratio: 0.532329
+chi-square: 11.768000

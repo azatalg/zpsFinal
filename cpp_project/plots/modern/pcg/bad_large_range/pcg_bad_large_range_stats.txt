@@ -1,0 +1,11 @@
+Bad large-range PCG32
+min: 0
+max: 4294954284
+mean: 2147657129.777160
+variance: 1535642954435403776.000000
+stddev: 1239210617.463958
+zero count: 1
+one bits: 1599342
+total bits: 3200000
+one bit ratio: 0.499794
+chi-square: 12.416000

@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="540" height="420">
+<rect width="100%" height="100%" fill="white"/>
+<text x="270" y="35" font-size="22" text-anchor="middle" font-family="Arial">Bad Lehmer large range bit ratio</text>
+<line x1="75" y1="345" x2="465" y2="345" stroke="black"/>
+<line x1="75" y1="75" x2="75" y2="345" stroke="black"/>
+<rect x="145" y="210" width="105" height="135" fill="#1f77b4"/>
+<text x="197" y="370" font-size="15" text-anchor="middle" font-family="Arial">0 bits</text>
+<text x="197" y="203" font-size="13" text-anchor="middle" font-family="Arial">0.5000</text>
+<rect x="305" y="210" width="105" height="135" fill="#1f77b4"/>
+<text x="357" y="370" font-size="15" text-anchor="middle" font-family="Arial">1 bits</text>
+<text x="357" y="203" font-size="13" text-anchor="middle" font-family="Arial">0.5000</text>
+<line x1="75" y1="210" x2="465" y2="210" stroke="gray" stroke-dasharray="5,5"/>
+<text x="465" y="205" font-size="12" text-anchor="end" font-family="Arial">ideal 0.5</text>
+</svg>

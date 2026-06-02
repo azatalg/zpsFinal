@@ -1,0 +1,11 @@
+Good PCG32
+min: 49205
+max: 4294960347
+mean: 2144300883.073310
+variance: 1533765235903023872.000000
+stddev: 1238452758.849938
+zero count: 0
+one bits: 1599082
+total bits: 3200000
+one bit ratio: 0.499713
+chi-square: 24.772800

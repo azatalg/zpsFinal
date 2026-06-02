@@ -1,0 +1,11 @@
+Xorshift32 with one weak shift
+min: 14625
+max: 4294875181
+mean: 2144120977.009910
+variance: 1542285055191781120.000000
+stddev: 1241887698.301171
+zero count: 0
+one bits: 1599387
+total bits: 3200000
+one bit ratio: 0.499808
+chi-square: 18.249200

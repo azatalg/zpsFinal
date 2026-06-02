@@ -1,0 +1,11 @@
+Good LFSR
+min: 1
+max: 65535
+mean: 32731.958770
+variance: 358546884.912530
+stddev: 18935.334296
+zero count: 0
+one bits: 799139
+total bits: 1600000
+one bit ratio: 0.499462
+chi-square: 2.664800

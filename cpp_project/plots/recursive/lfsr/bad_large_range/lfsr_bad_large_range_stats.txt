@@ -1,0 +1,11 @@
+Bad large-range LFSR
+min: 27100601
+max: 4285825896
+mean: 2157788953.190610
+variance: 1529294601270899456.000000
+stddev: 1236646514.275967
+zero count: 0
+one bits: 1607770
+total bits: 3200000
+one bit ratio: 0.502428
+chi-square: 1025.584800

@@ -1,0 +1,705 @@
+Good LCG:
+231794730
+1126946331
+1757975480
+850994577
+1634557174
+707246327
+1397699428
+1035569613
+1904890498
+1335160211
+
+Analysis of Good LCG
+min:           14984
+max:           2147472790
+mean:          1072058253.992800
+variance:      382894601158474560.000000
+stddev:        618784777.736552
+zero count:    0
+one bits:      1549900
+total bits:    3100000
+one bit ratio: 0.499968
+chi-square:    17.200400
+histogram:
+  bucket 0: 5011
+  bucket 1: 5024
+  bucket 2: 4969
+  bucket 3: 4946
+  bucket 4: 4920
+  bucket 5: 5132
+  bucket 6: 5046
+  bucket 7: 5099
+  bucket 8: 5030
+  bucket 9: 5047
+  bucket 10: 4999
+  bucket 11: 4924
+  bucket 12: 4947
+  bucket 13: 4975
+  bucket 14: 5087
+  bucket 15: 5077
+  bucket 16: 4901
+  bucket 17: 4960
+  bucket 18: 4908
+  bucket 19: 4998
+
+Analysis of Bad large-range LCG
+min:           26007
+max:           2147458605
+mean:          1073741022.555520
+variance:      383353162415633472.000000
+stddev:        619155200.588377
+zero count:    0
+one bits:      1650219
+total bits:    3100000
+one bit ratio: 0.532329
+chi-square:    11.768000
+histogram:
+  bucket 0: 5001
+  bucket 1: 5024
+  bucket 2: 4920
+  bucket 3: 4968
+  bucket 4: 4957
+  bucket 5: 4986
+  bucket 6: 5066
+  bucket 7: 5082
+  bucket 8: 5047
+  bucket 9: 5033
+  bucket 10: 4904
+  bucket 11: 5053
+  bucket 12: 5030
+  bucket 13: 5016
+  bucket 14: 5024
+  bucket 15: 4927
+  bucket 16: 5040
+  bucket 17: 4903
+  bucket 18: 4964
+  bucket 19: 5055
+
+Analysis of LCG with even increment
+min:           18045
+max:           2147483589
+mean:          1072768794.752960
+variance:      382909860665039168.000000
+stddev:        618797107.835063
+zero count:    0
+one bits:      1549075
+total bits:    3100000
+one bit ratio: 0.499702
+chi-square:    14.920800
+histogram:
+  bucket 0: 4950
+  bucket 1: 4947
+  bucket 2: 5075
+  bucket 3: 4948
+  bucket 4: 5060
+  bucket 5: 5060
+  bucket 6: 4905
+  bucket 7: 5053
+  bucket 8: 4991
+  bucket 9: 5037
+  bucket 10: 5030
+  bucket 11: 5140
+  bucket 12: 4997
+  bucket 13: 4999
+  bucket 14: 4942
+  bucket 15: 5015
+  bucket 16: 4905
+  bucket 17: 4961
+  bucket 18: 5046
+  bucket 19: 4939
+
+Analysis of Good Lehmer
+min:           930
+max:           2147479582
+mean:          1074185909.163440
+variance:      386790751119074432.000000
+stddev:        621925036.575209
+zero count:    0
+one bits:      1548782
+total bits:    3100000
+one bit ratio: 0.499607
+chi-square:    15.389600
+histogram:
+  bucket 0: 5133
+  bucket 1: 5010
+  bucket 2: 5038
+  bucket 3: 5004
+  bucket 4: 5012
+  bucket 5: 4895
+  bucket 6: 4945
+  bucket 7: 4929
+  bucket 8: 4932
+  bucket 9: 4902
+  bucket 10: 5001
+  bucket 11: 5017
+  bucket 12: 4922
+  bucket 13: 5030
+  bucket 14: 5046
+  bucket 15: 5042
+  bucket 16: 5099
+  bucket 17: 5051
+  bucket 18: 4978
+  bucket 19: 5014
+
+Analysis of Bad large-range Lehmer
+min:           123456789
+max:           2024026858
+mean:          1073741823.500000
+variance:      903041646794666624.000000
+stddev:        950285034.500000
+zero count:    0
+one bits:      1550000
+total bits:    3100000
+one bit ratio: 0.500000
+chi-square:    900000.000000
+histogram:
+  bucket 0: 0
+  bucket 1: 50000
+  bucket 2: 0
+  bucket 3: 0
+  bucket 4: 0
+  bucket 5: 0
+  bucket 6: 0
+  bucket 7: 0
+  bucket 8: 0
+  bucket 9: 0
+  bucket 10: 0
+  bucket 11: 0
+  bucket 12: 0
+  bucket 13: 0
+  bucket 14: 0
+  bucket 15: 0
+  bucket 16: 0
+  bucket 17: 0
+  bucket 18: 50000
+  bucket 19: 0
+
+Analysis of Lehmer with non-primitive multiplier
+min:           29059
+max:           2147474801
+mean:          1073107733.207470
+variance:      383973514612148736.000000
+stddev:        619655964.719254
+zero count:    0
+one bits:      1550109
+total bits:    3100000
+one bit ratio: 0.500035
+chi-square:    17.610000
+histogram:
+  bucket 0: 4993
+  bucket 1: 5049
+  bucket 2: 5016
+  bucket 3: 4981
+  bucket 4: 4973
+  bucket 5: 4994
+  bucket 6: 4990
+  bucket 7: 4993
+  bucket 8: 5011
+  bucket 9: 4996
+  bucket 10: 4960
+  bucket 11: 4978
+  bucket 12: 5069
+  bucket 13: 5153
+  bucket 14: 4938
+  bucket 15: 4966
+  bucket 16: 4895
+  bucket 17: 5095
+  bucket 18: 5092
+  bucket 19: 4858
+
+Analysis of Good LFSR
+min:           1
+max:           65535
+mean:          32731.958770
+variance:      358546884.912530
+stddev:        18935.334296
+zero count:    0
+one bits:      799139
+total bits:    1600000
+one bit ratio: 0.499462
+chi-square:    2.664800
+histogram:
+  bucket 0: 5051
+  bucket 1: 5027
+  bucket 2: 5036
+  bucket 3: 4956
+  bucket 4: 5026
+  bucket 5: 5003
+  bucket 6: 4969
+  bucket 7: 4968
+  bucket 8: 5030
+  bucket 9: 4988
+  bucket 10: 5027
+  bucket 11: 4965
+  bucket 12: 4994
+  bucket 13: 4981
+  bucket 14: 4991
+  bucket 15: 4989
+  bucket 16: 5007
+  bucket 17: 5014
+  bucket 18: 4991
+  bucket 19: 4987
+
+Analysis of Bad large-range LFSR
+min:           27100601
+max:           4285825896
+mean:          2157788953.190610
+variance:      1529294601270899456.000000
+stddev:        1236646514.275967
+zero count:    0
+one bits:      1607770
+total bits:    3200000
+one bit ratio: 0.502428
+chi-square:    1025.584800
+histogram:
+  bucket 0: 4399
+  bucket 1: 5085
+  bucket 2: 5669
+  bucket 3: 5183
+  bucket 4: 4302
+  bucket 5: 5474
+  bucket 6: 4305
+  bucket 7: 5474
+  bucket 8: 5178
+  bucket 9: 4691
+  bucket 10: 5085
+  bucket 11: 5767
+  bucket 12: 4107
+  bucket 13: 4596
+  bucket 14: 5567
+  bucket 15: 5378
+  bucket 16: 4398
+  bucket 17: 5471
+  bucket 18: 4692
+  bucket 19: 5179
+
+Analysis of LFSR with one missing tap
+min:           31
+max:           65493
+mean:          32656.412080
+variance:      364714062.292330
+stddev:        19097.488377
+zero count:    0
+one bits:      797289
+total bits:    1600000
+one bit ratio: 0.498306
+chi-square:    407.812800
+histogram:
+  bucket 0: 5490
+  bucket 1: 5347
+  bucket 2: 4960
+  bucket 3: 4823
+  bucket 4: 4636
+  bucket 5: 4891
+  bucket 6: 4632
+  bucket 7: 5278
+  bucket 8: 5417
+  bucket 9: 4696
+  bucket 10: 5347
+  bucket 11: 4435
+  bucket 12: 4567
+  bucket 13: 5087
+  bucket 14: 5477
+  bucket 15: 4891
+  bucket 16: 5023
+  bucket 17: 5090
+  bucket 18: 4696
+  bucket 19: 5217
+
+Analysis of Good Lagged Fibonacci
+min:           131711676647192
+max:           18446607743106592422
+mean:          9231903188630614016.000000
+variance:      28498109226155658808136687759029960704.000000
+stddev:        5338362035882885120.000000
+zero count:    0
+one bits:      3198823
+total bits:    6400000
+one bit ratio: 0.499816
+chi-square:    15.431200
+histogram:
+  bucket 0: 5047
+  bucket 1: 5061
+  bucket 2: 5002
+  bucket 3: 4916
+  bucket 4: 5019
+  bucket 5: 5052
+  bucket 6: 4891
+  bucket 7: 5001
+  bucket 8: 4919
+  bucket 9: 4943
+  bucket 10: 5070
+  bucket 11: 4987
+  bucket 12: 4914
+  bucket 13: 5001
+  bucket 14: 4966
+  bucket 15: 5099
+  bucket 16: 4933
+  bucket 17: 5078
+  bucket 18: 5038
+  bucket 19: 5063
+
+Analysis of Bad large-range Lagged Fibonacci
+min:           436541270513669
+max:           18446627471822678317
+mean:          9230173365099716608.000000
+variance:      28400742057467506827681929370938638336.000000
+stddev:        5329234659636175872.000000
+zero count:    0
+one bits:      3232282
+total bits:    6400000
+one bit ratio: 0.505044
+chi-square:    22.656800
+histogram:
+  bucket 0: 4930
+  bucket 1: 5107
+  bucket 2: 4949
+  bucket 3: 5051
+  bucket 4: 4916
+  bucket 5: 5108
+  bucket 6: 4982
+  bucket 7: 4907
+  bucket 8: 4988
+  bucket 9: 4947
+  bucket 10: 5109
+  bucket 11: 4917
+  bucket 12: 4939
+  bucket 13: 5114
+  bucket 14: 5002
+  bucket 15: 5015
+  bucket 16: 5005
+  bucket 17: 4875
+  bucket 18: 5064
+  bucket 19: 5075
+
+Analysis of Lagged Fibonacci with close lags
+min:           95648940170604
+max:           18446368676909561188
+mean:          9241706333159294976.000000
+variance:      28271378804430702722245214268087599104.000000
+stddev:        5317083674762952704.000000
+zero count:    0
+one bits:      3200371
+total bits:    6400000
+one bit ratio: 0.500058
+chi-square:    26.920800
+histogram:
+  bucket 0: 4868
+  bucket 1: 4856
+  bucket 2: 5077
+  bucket 3: 5132
+  bucket 4: 4875
+  bucket 5: 5072
+  bucket 6: 5051
+  bucket 7: 5009
+  bucket 8: 5044
+  bucket 9: 4912
+  bucket 10: 4921
+  bucket 11: 4948
+  bucket 12: 5048
+  bucket 13: 5008
+  bucket 14: 5117
+  bucket 15: 5085
+  bucket 16: 5043
+  bucket 17: 4954
+  bucket 18: 4948
+  bucket 19: 5032
+
+Analysis of Good Xorshift32
+min:           95574
+max:           4294936387
+mean:          2154179180.488110
+variance:      1536167166439428352.000000
+stddev:        1239422109.871947
+zero count:    0
+one bits:      1600796
+total bits:    3200000
+one bit ratio: 0.500249
+chi-square:    15.141200
+histogram:
+  bucket 0: 4944
+  bucket 1: 4965
+  bucket 2: 4953
+  bucket 3: 4969
+  bucket 4: 4943
+  bucket 5: 5011
+  bucket 6: 5131
+  bucket 7: 4918
+  bucket 8: 4936
+  bucket 9: 4892
+  bucket 10: 5042
+  bucket 11: 5083
+  bucket 12: 5061
+  bucket 13: 5011
+  bucket 14: 5054
+  bucket 15: 4960
+  bucket 16: 4980
+  bucket 17: 5030
+  bucket 18: 5057
+  bucket 19: 5060
+
+Analysis of Bad large-range Xorshift32
+min:           123456789
+max:           4204257784
+mean:          2162503435.718750
+variance:      1250654853398311168.000000
+stddev:        1118326809.746736
+zero count:    0
+one bits:      1631250
+total bits:    3200000
+one bit ratio: 0.509766
+chi-square:    107031.250000
+histogram:
+  bucket 0: 3125
+  bucket 1: 3125
+  bucket 2: 3125
+  bucket 3: 9375
+  bucket 4: 0
+  bucket 5: 12500
+  bucket 6: 0
+  bucket 7: 0
+  bucket 8: 0
+  bucket 9: 15625
+  bucket 10: 9375
+  bucket 11: 9375
+  bucket 12: 3125
+  bucket 13: 9375
+  bucket 14: 0
+  bucket 15: 12500
+  bucket 16: 0
+  bucket 17: 0
+  bucket 18: 0
+  bucket 19: 9375
+
+Analysis of Xorshift32 with one weak shift
+min:           14625
+max:           4294875181
+mean:          2144120977.009910
+variance:      1542285055191781120.000000
+stddev:        1241887698.301171
+zero count:    0
+one bits:      1599387
+total bits:    3200000
+one bit ratio: 0.499808
+chi-square:    18.249200
+histogram:
+  bucket 0: 4996
+  bucket 1: 5116
+  bucket 2: 5000
+  bucket 3: 5046
+  bucket 4: 5071
+  bucket 5: 5075
+  bucket 6: 4946
+  bucket 7: 4973
+  bucket 8: 4922
+  bucket 9: 4892
+  bucket 10: 4857
+  bucket 11: 5062
+  bucket 12: 4979
+  bucket 13: 5106
+  bucket 14: 5001
+  bucket 15: 4988
+  bucket 16: 4955
+  bucket 17: 5063
+  bucket 18: 4989
+  bucket 19: 4963
+
+Analysis of Good PCG32
+min:           49205
+max:           4294960347
+mean:          2144300883.073310
+variance:      1533765235903023872.000000
+stddev:        1238452758.849938
+zero count:    0
+one bits:      1599082
+total bits:    3200000
+one bit ratio: 0.499713
+chi-square:    24.772800
+histogram:
+  bucket 0: 4968
+  bucket 1: 5039
+  bucket 2: 5037
+  bucket 3: 4982
+  bucket 4: 5077
+  bucket 5: 5111
+  bucket 6: 4828
+  bucket 7: 5042
+  bucket 8: 4952
+  bucket 9: 5057
+  bucket 10: 5003
+  bucket 11: 4900
+  bucket 12: 4984
+  bucket 13: 5035
+  bucket 14: 5125
+  bucket 15: 5124
+  bucket 16: 4888
+  bucket 17: 4916
+  bucket 18: 4960
+  bucket 19: 4972
+
+Analysis of Bad large-range PCG32
+min:           0
+max:           4294954284
+mean:          2147657129.777160
+variance:      1535642954435403776.000000
+stddev:        1239210617.463958
+zero count:    1
+one bits:      1599342
+total bits:    3200000
+one bit ratio: 0.499794
+chi-square:    12.416000
+histogram:
+  bucket 0: 5041
+  bucket 1: 4865
+  bucket 2: 4995
+  bucket 3: 4983
+  bucket 4: 5009
+  bucket 5: 5049
+  bucket 6: 5079
+  bucket 7: 4984
+  bucket 8: 5105
+  bucket 9: 4959
+  bucket 10: 4969
+  bucket 11: 5040
+  bucket 12: 4938
+  bucket 13: 4990
+  bucket 14: 4959
+  bucket 15: 4974
+  bucket 16: 4990
+  bucket 17: 5061
+  bucket 18: 5066
+  bucket 19: 4944
+
+Analysis of PCG32 with even increment
+min:           0
+max:           4294960485
+mean:          2150985413.659550
+variance:      1536266775589267712.000000
+stddev:        1239462292.927569
+zero count:    1
+one bits:      1602133
+total bits:    3200000
+one bit ratio: 0.500667
+chi-square:    31.560000
+histogram:
+  bucket 0: 4981
+  bucket 1: 4970
+  bucket 2: 4920
+  bucket 3: 4813
+  bucket 4: 5137
+  bucket 5: 5055
+  bucket 6: 5106
+  bucket 7: 5028
+  bucket 8: 4928
+  bucket 9: 5087
+  bucket 10: 4964
+  bucket 11: 4936
+  bucket 12: 5098
+  bucket 13: 4882
+  bucket 14: 4951
+  bucket 15: 5034
+  bucket 16: 5076
+  bucket 17: 4870
+  bucket 18: 5081
+  bucket 19: 5083
+
+Analysis of Mersenne Twister 64
+min:           14919683437995
+max:           18446611593976244137
+mean:          9205583943417234432.000000
+variance:      28328029434821109159981201682757320704.000000
+stddev:        5322408236392724480.000000
+zero count:    0
+one bits:      3200144
+total bits:    6400000
+one bit ratio: 0.500023
+chi-square:    19.153200
+histogram:
+  bucket 0: 4986
+  bucket 1: 5129
+  bucket 2: 5052
+  bucket 3: 5080
+  bucket 4: 4879
+  bucket 5: 4959
+  bucket 6: 4927
+  bucket 7: 5010
+  bucket 8: 5065
+  bucket 9: 5017
+  bucket 10: 5006
+  bucket 11: 4918
+  bucket 12: 5028
+  bucket 13: 5043
+  bucket 14: 4963
+  bucket 15: 5113
+  bucket 16: 5020
+  bucket 17: 4966
+  bucket 18: 4972
+  bucket 19: 4867
+
+Analysis of XorshiftStar64
+min:           4745209333332
+max:           18446415941449639086
+mean:          9222906312571850752.000000
+variance:      28309985610924606761633489784349392896.000000
+stddev:        5320712885593866240.000000
+zero count:    0
+one bits:      3199138
+total bits:    6400000
+one bit ratio: 0.499865
+chi-square:    13.373600
+histogram:
+  bucket 0: 5027
+  bucket 1: 4961
+  bucket 2: 5050
+  bucket 3: 4947
+  bucket 4: 5012
+  bucket 5: 4911
+  bucket 6: 4910
+  bucket 7: 5029
+  bucket 8: 5101
+  bucket 9: 5022
+  bucket 10: 5073
+  bucket 11: 5067
+  bucket 12: 4954
+  bucket 13: 5064
+  bucket 14: 4937
+  bucket 15: 4940
+  bucket 16: 5013
+  bucket 17: 5053
+  bucket 18: 4929
+  bucket 19: 5000
+
+Analysis of Good Combined Generator
+min:           38608
+max:           2147465310
+mean:          1073039396.737200
+variance:      385159406453878080.000000
+stddev:        620612122.387146
+zero count:    0
+one bits:      1550268
+total bits:    3100000
+one bit ratio: 0.500086
+chi-square:    8.186000
+histogram:
+  bucket 0: 4978
+  bucket 1: 5033
+  bucket 2: 5002
+  bucket 3: 4983
+  bucket 4: 5055
+  bucket 5: 5057
+  bucket 6: 4979
+  bucket 7: 5053
+  bucket 8: 5049
+  bucket 9: 4980
+  bucket 10: 4889
+  bucket 11: 4964
+  bucket 12: 4967
+  bucket 13: 4982
+  bucket 14: 5046
+  bucket 15: 4950
+  bucket 16: 5023
+  bucket 17: 4938
+  bucket 18: 5044
+  bucket 19: 5028
+

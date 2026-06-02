@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="900" height="520">
+<rect width="100%" height="100%" fill="white"/>
+<text x="450" y="35" font-size="22" text-anchor="middle" font-family="Arial">Good Lehmer histogram</text>
+<line x1="80" y1="445" x2="860" y2="445" stroke="black"/>
+<line x1="80" y1="65" x2="80" y2="445" stroke="black"/>
+<rect x="80" y="65" width="34.25" height="380" fill="#1f77b4"/>
+<text x="97.125" y="465" font-size="11" text-anchor="middle" font-family="Arial">0</text>
+<rect x="119.25" y="74.1058" width="34.25" height="370.894" fill="#1f77b4"/>
+<text x="136.375" y="465" font-size="11" text-anchor="middle" font-family="Arial">1</text>
+<rect x="158.5" y="72.0329" width="34.25" height="372.967" fill="#1f77b4"/>
+<text x="175.625" y="465" font-size="11" text-anchor="middle" font-family="Arial">2</text>
+<rect x="197.75" y="74.55" width="34.25" height="370.45" fill="#1f77b4"/>
+<text x="214.875" y="465" font-size="11" text-anchor="middle" font-family="Arial">3</text>
+<rect x="237" y="73.9577" width="34.25" height="371.042" fill="#1f77b4"/>
+<text x="254.125" y="465" font-size="11" text-anchor="middle" font-family="Arial">4</text>
+<rect x="276.25" y="82.6193" width="34.25" height="362.381" fill="#1f77b4"/>
+<text x="293.375" y="465" font-size="11" text-anchor="middle" font-family="Arial">5</text>
+<rect x="315.5" y="78.9178" width="34.25" height="366.082" fill="#1f77b4"/>
+<text x="332.625" y="465" font-size="11" text-anchor="middle" font-family="Arial">6</text>
+<rect x="354.75" y="80.1023" width="34.25" height="364.898" fill="#1f77b4"/>
+<text x="371.875" y="465" font-size="11" text-anchor="middle" font-family="Arial">7</text>
+<rect x="394" y="79.8802" width="34.25" height="365.12" fill="#1f77b4"/>
+<text x="411.125" y="465" font-size="11" text-anchor="middle" font-family="Arial">8</text>
+<rect x="433.25" y="82.1011" width="34.25" height="362.899" fill="#1f77b4"/>
+<text x="450.375" y="465" font-size="11" text-anchor="middle" font-family="Arial">9</text>
+<rect x="472.5" y="74.7721" width="34.25" height="370.228" fill="#1f77b4"/>
+<text x="489.625" y="465" font-size="11" text-anchor="middle" font-family="Arial">10</text>
+<rect x="511.75" y="73.5876" width="34.25" height="371.412" fill="#1f77b4"/>
+<text x="528.875" y="465" font-size="11" text-anchor="middle" font-family="Arial">11</text>
+<rect x="551" y="80.6205" width="34.25" height="364.38" fill="#1f77b4"/>
+<text x="568.125" y="465" font-size="11" text-anchor="middle" font-family="Arial">12</text>
+<rect x="590.25" y="72.6252" width="34.25" height="372.375" fill="#1f77b4"/>
+<text x="607.375" y="465" font-size="11" text-anchor="middle" font-family="Arial">13</text>
+<rect x="629.5" y="71.4407" width="34.25" height="373.559" fill="#1f77b4"/>
+<text x="646.625" y="465" font-size="11" text-anchor="middle" font-family="Arial">14</text>
+<rect x="668.75" y="71.7368" width="34.25" height="373.263" fill="#1f77b4"/>
+<text x="685.875" y="465" font-size="11" text-anchor="middle" font-family="Arial">15</text>
+<rect x="708" y="67.517" width="34.25" height="377.483" fill="#1f77b4"/>
+<text x="725.125" y="465" font-size="11" text-anchor="middle" font-family="Arial">16</text>
+<rect x="747.25" y="71.0705" width="34.25" height="373.929" fill="#1f77b4"/>
+<text x="764.375" y="465" font-size="11" text-anchor="middle" font-family="Arial">17</text>
+<rect x="786.5" y="76.4748" width="34.25" height="368.525" fill="#1f77b4"/>
+<text x="803.625" y="465" font-size="11" text-anchor="middle" font-family="Arial">18</text>
+<rect x="825.75" y="73.8097" width="34.25" height="371.19" fill="#1f77b4"/>
+<text x="842.875" y="465" font-size="11" text-anchor="middle" font-family="Arial">19</text>
+<text x="450" y="495" font-size="16" text-anchor="middle" font-family="Arial">bucket</text>
+<text x="25" y="260" font-size="16" text-anchor="middle" font-family="Arial" transform="rotate(-90 25 260)">count</text>
+</svg>

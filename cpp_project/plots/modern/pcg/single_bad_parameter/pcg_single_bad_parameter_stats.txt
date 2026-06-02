@@ -1,0 +1,11 @@
+PCG32 with even increment
+min: 0
+max: 4294960485
+mean: 2150985413.659550
+variance: 1536266775589267712.000000
+stddev: 1239462292.927569
+zero count: 1
+one bits: 1602133
+total bits: 3200000
+one bit ratio: 0.500667
+chi-square: 31.560000

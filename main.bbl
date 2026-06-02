@@ -1,0 +1,337 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.3 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{none/global//global/global/global}
+    \entry{knuth1997art}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=ec08e6f01da5f3814f28a70c89c64656}{%
+           family={Knuth},
+           familyi={K\bibinitperiod},
+           given={Donald\bibnamedelima E.},
+           giveni={D\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Addison-Wesley}%
+      }
+      \strng{namehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{fullhashraw}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{bibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorbibnamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authornamehash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhash}{ec08e6f01da5f3814f28a70c89c64656}
+      \strng{authorfullhashraw}{ec08e6f01da5f3814f28a70c89c64656}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{The Art of Computer Programming, Volume 2: Seminumerical Algorithms}
+      \field{year}{1997}
+    \endentry
+    \entry{lecuyer2007testu01}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=593f029a3e210301644168b9cc06d01a}{%
+           family={L'Ecuyer},
+           familyi={L\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+        {{hash=aa0fc8f1cfd5a89e08aeafaa7413555b}{%
+           family={Simard},
+           familyi={S\bibinitperiod},
+           given={Richard},
+           giveni={R\bibinitperiod}}}%
+      }
+      \strng{namehash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{fullhash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{fullhashraw}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{bibnamehash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{authorbibnamehash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{authornamehash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{authorfullhash}{3323920cee83536d4ca1ef3d07f7fc99}
+      \strng{authorfullhashraw}{3323920cee83536d4ca1ef3d07f7fc99}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Mathematical Software}
+      \field{number}{4}
+      \field{title}{TestU01: A C Library for Empirical Testing of Random Number Generators}
+      \field{volume}{33}
+      \field{year}{2007}
+      \verb{doi}
+      \verb 10.1145/1268776.1268777
+      \endverb
+    \endentry
+    \entry{hull1962random}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=d898201505226cfbd25f8bf30b433ed9}{%
+           family={Hull},
+           familyi={H\bibinitperiod},
+           given={T.\bibnamedelimi E.},
+           giveni={T\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+        {{hash=b1e294b31e2d02c8e6e2e6673254128f}{%
+           family={Dobell},
+           familyi={D\bibinitperiod},
+           given={A.\bibnamedelimi R.},
+           giveni={A\bibinitperiod\bibinitdelim R\bibinitperiod}}}%
+      }
+      \strng{namehash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{fullhash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{fullhashraw}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{bibnamehash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{authorbibnamehash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{authornamehash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{authorfullhash}{6d904234dbfe9736e9337e44fd9a2b13}
+      \strng{authorfullhashraw}{6d904234dbfe9736e9337e44fd9a2b13}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{SIAM Review}
+      \field{number}{3}
+      \field{title}{Random Number Generators}
+      \field{volume}{4}
+      \field{year}{1962}
+      \field{pages}{230\bibrangedash 254}
+      \range{pages}{25}
+      \verb{doi}
+      \verb 10.1137/1004061
+      \endverb
+    \endentry
+    \entry{lehmer1951}{inproceedings}{}{}
+      \name{author}{1}{}{%
+        {{hash=63196bddebd8e713df6bac51c837c623}{%
+           family={Lehmer},
+           familyi={L\bibinitperiod},
+           given={D.\bibnamedelimi H.},
+           giveni={D\bibinitperiod\bibinitdelim H\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Harvard University Press}%
+      }
+      \strng{namehash}{63196bddebd8e713df6bac51c837c623}
+      \strng{fullhash}{63196bddebd8e713df6bac51c837c623}
+      \strng{fullhashraw}{63196bddebd8e713df6bac51c837c623}
+      \strng{bibnamehash}{63196bddebd8e713df6bac51c837c623}
+      \strng{authorbibnamehash}{63196bddebd8e713df6bac51c837c623}
+      \strng{authornamehash}{63196bddebd8e713df6bac51c837c623}
+      \strng{authorfullhash}{63196bddebd8e713df6bac51c837c623}
+      \strng{authorfullhashraw}{63196bddebd8e713df6bac51c837c623}
+      \field{sortinit}{5}
+      \field{sortinithash}{20e9b4b0b173788c5dace24730f47d8c}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{booktitle}{Proceedings of the Second Symposium on Large-Scale Digital Calculating Machinery}
+      \field{title}{Mathematical Methods in Large-Scale Computing Units}
+      \field{year}{1951}
+      \field{pages}{141\bibrangedash 146}
+      \range{pages}{6}
+    \endentry
+    \entry{lecuyer1999tables}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=593f029a3e210301644168b9cc06d01a}{%
+           family={L'Ecuyer},
+           familyi={L\bibinitperiod},
+           given={Pierre},
+           giveni={P\bibinitperiod}}}%
+      }
+      \strng{namehash}{593f029a3e210301644168b9cc06d01a}
+      \strng{fullhash}{593f029a3e210301644168b9cc06d01a}
+      \strng{fullhashraw}{593f029a3e210301644168b9cc06d01a}
+      \strng{bibnamehash}{593f029a3e210301644168b9cc06d01a}
+      \strng{authorbibnamehash}{593f029a3e210301644168b9cc06d01a}
+      \strng{authornamehash}{593f029a3e210301644168b9cc06d01a}
+      \strng{authorfullhash}{593f029a3e210301644168b9cc06d01a}
+      \strng{authorfullhashraw}{593f029a3e210301644168b9cc06d01a}
+      \field{sortinit}{6}
+      \field{sortinithash}{b33bc299efb3c36abec520a4c896a66d}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Mathematics of Computation}
+      \field{number}{225}
+      \field{title}{Tables of Linear Congruential Generators of Different Sizes and Good Lattice Structure}
+      \field{volume}{68}
+      \field{year}{1999}
+      \field{pages}{249\bibrangedash 260}
+      \range{pages}{12}
+      \verb{doi}
+      \verb 10.1090/S0025-5718-99-00996-5
+      \endverb
+    \endentry
+    \entry{matsumoto1998mersenne}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=37a788e3dbb975370d88203dfba379ec}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+        {{hash=88d8b870701ad221060b0c7ef21a2df8}{%
+           family={Nishimura},
+           familyi={N\bibinitperiod},
+           given={Takuji},
+           giveni={T\bibinitperiod}}}%
+      }
+      \strng{namehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{fullhash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{fullhashraw}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{bibnamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authorbibnamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authornamehash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authorfullhash}{adc651ab76aa3abcc9d94787b0adae82}
+      \strng{authorfullhashraw}{adc651ab76aa3abcc9d94787b0adae82}
+      \field{sortinit}{7}
+      \field{sortinithash}{108d0be1b1bee9773a1173443802c0a3}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Modeling and Computer Simulation}
+      \field{number}{1}
+      \field{title}{Mersenne Twister: A 623-dimensionally Equidistributed Uniform Pseudo-random Number Generator}
+      \field{volume}{8}
+      \field{year}{1998}
+      \field{pages}{3\bibrangedash 30}
+      \range{pages}{28}
+      \verb{doi}
+      \verb 10.1145/272991.272995
+      \endverb
+    \endentry
+    \entry{saito2013mtgp}{article}{}{}
+      \name{author}{2}{}{%
+        {{hash=0c01b5b4d925ff90df6e479ee22f55f4}{%
+           family={Saito},
+           familyi={S\bibinitperiod},
+           given={Mutsuo},
+           giveni={M\bibinitperiod}}}%
+        {{hash=37a788e3dbb975370d88203dfba379ec}{%
+           family={Matsumoto},
+           familyi={M\bibinitperiod},
+           given={Makoto},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{fullhash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{fullhashraw}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{bibnamehash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{authorbibnamehash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{authornamehash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{authorfullhash}{e84f58d9c6ecfae060401923eaf31330}
+      \strng{authorfullhashraw}{e84f58d9c6ecfae060401923eaf31330}
+      \field{sortinit}{9}
+      \field{sortinithash}{0a5ebc79d83c96b6579069544c73c7d4}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{ACM Transactions on Mathematical Software}
+      \field{number}{2}
+      \field{title}{Variants of Mersenne Twister Suitable for Graphic Processors}
+      \field{volume}{39}
+      \field{year}{2013}
+      \verb{doi}
+      \verb 10.1145/2427023.2427028
+      \endverb
+    \endentry
+    \entry{marsaglia2003xorshift}{article}{}{}
+      \name{author}{1}{}{%
+        {{hash=4a0a18148bcc65f1061ef2bd5c351471}{%
+           family={Marsaglia},
+           familyi={M\bibinitperiod},
+           given={George},
+           giveni={G\bibinitperiod}}}%
+      }
+      \strng{namehash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{fullhash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{fullhashraw}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{bibnamehash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{authorbibnamehash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{authornamehash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{authorfullhash}{4a0a18148bcc65f1061ef2bd5c351471}
+      \strng{authorfullhashraw}{4a0a18148bcc65f1061ef2bd5c351471}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Journal of Statistical Software}
+      \field{number}{14}
+      \field{title}{Xorshift RNGs}
+      \field{volume}{8}
+      \field{year}{2003}
+      \field{pages}{1\bibrangedash 6}
+      \range{pages}{6}
+      \verb{doi}
+      \verb 10.18637/jss.v008.i14
+      \endverb
+    \endentry
+    \entry{oneill2014pcg}{report}{}{}
+      \name{author}{1}{}{%
+        {{hash=c9d4543de8e5e02759f960ce07428cec}{%
+           family={O'Neill},
+           familyi={O\bibinitperiod},
+           given={Melissa\bibnamedelima E.},
+           giveni={M\bibinitperiod\bibinitdelim E\bibinitperiod}}}%
+      }
+      \list{institution}{1}{%
+        {Harvey Mudd College}%
+      }
+      \strng{namehash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{fullhash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{fullhashraw}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{bibnamehash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{authorbibnamehash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{authornamehash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{authorfullhash}{c9d4543de8e5e02759f960ce07428cec}
+      \strng{authorfullhashraw}{c9d4543de8e5e02759f960ce07428cec}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{number}{HMC-CS-2014-0905}
+      \field{title}{PCG: A Family of Simple Fast Space-Efficient Statistically Good Algorithms for Random Number Generation}
+      \field{type}{techreport}
+      \field{year}{2014}
+    \endentry
+    \entry{golomb1967shift}{book}{}{}
+      \name{author}{1}{}{%
+        {{hash=42d2456670dfd1d7f5f67714e345dfb8}{%
+           family={Golomb},
+           familyi={G\bibinitperiod},
+           given={Solomon\bibnamedelima W.},
+           giveni={S\bibinitperiod\bibinitdelim W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Holden-Day}%
+      }
+      \strng{namehash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{fullhash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{fullhashraw}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{bibnamehash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{authorbibnamehash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{authornamehash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{authorfullhash}{42d2456670dfd1d7f5f67714e345dfb8}
+      \strng{authorfullhashraw}{42d2456670dfd1d7f5f67714e345dfb8}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Shift Register Sequences}
+      \field{year}{1967}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+

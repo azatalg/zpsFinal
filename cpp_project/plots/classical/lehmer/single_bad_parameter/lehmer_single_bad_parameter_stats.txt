@@ -1,0 +1,11 @@
+Lehmer with non-primitive multiplier
+min: 29059
+max: 2147474801
+mean: 1073107733.207470
+variance: 383973514612148736.000000
+stddev: 619655964.719254
+zero count: 0
+one bits: 1550109
+total bits: 3100000
+one bit ratio: 0.500035
+chi-square: 17.610000
