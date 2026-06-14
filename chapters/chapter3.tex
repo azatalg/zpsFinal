@@ -1,129 +1,263 @@
 \section{Recursive Generators: LFSR and LFG}
 
-\subsection{Linear Feedback Shift Register (LFSR)} 
+\subsection{Linear Feedback Shift Register (LFSR)}
 
-A Linear Feedback Shift Register is incredibly fast, operates fundamentally on binary numbers (0s and 1s), and is widely used in digital electronics and simple cryptography. LFSR consists of:
+It is incredibly fast, operates fundamentally on binary numbers (0s and 1s), and is widely used in digital electronics and simple cryptography. An LFSR consists of:
 
 \begin{enumerate}
-    \item \textbf{Shift Register:} A device that shifts contents into adjacent positions in register or out of register if position is on the end. The positions where the content was is left empty if there is no content that that could be shifted there. 
-    
-    \item \textbf{Output Bit:} The bit at the end that is moved out of a shift register.
+    \item \textbf{Shift Register:} A device that shifts its contents into adjacent positions in the register. A bit at the end of the register is shifted out, while a new bit is inserted at the opposite end.
 
-    \item \textbf{Feedback Function:} A function that takes bits from certain positions \textbf{"taps"}, combines them in some sort of function and the result is fed back into the register's input bit. Bits are collected before the shift. 
-    
+    \item \textbf{Output Bit:} The bit at the end that is shifted out of the register.
+
+    \item \textbf{Feedback Function:} A function that takes bits from certain positions, called \textbf{taps}, combines them using the XOR operation, and feeds the result back into the register's input position. The bits are collected before the shift.
 \end{enumerate}
 
-An n-bit LFSR has $2^n$ possible states. However, because a state of all zeros will infinitely produce zeros, the maximum possible period for an LFSR sequence is $2^n-1$.
-
+An $n$-bit LFSR has $2^n$ possible states. However, because the all-zero state will produce zeros indefinitely, the maximum possible period of an LFSR sequence is $2^n-1$.
 
 \subsection{The Mathematics of LFSR}
 
 \subsubsection{The Recurrence Relation}
-The new bit $b_n$ in a Linear Feedback Shift Register (LFSR) is calculated recursively based on the previous bits. Given a register of length $k$ with feedback taps defined by coefficients $c_i$ (where $c_i = 1$ if there is an active tap, and $0$ if there is not), the sequence generation is governed by the following formula:
+
+The new bit $b_n$ in a Linear Feedback Shift Register (LFSR) is calculated recursively based on the previous bits. Given a register of length $k$, with feedback taps defined by coefficients $c_i$, where $c_i=1$ if the corresponding position is an active tap and $c_i=0$ otherwise, the sequence generation is governed by the following formula:
 \[
-b_{n} = (c_1 b_{n-1} + c_2 b_{n-2} + \dots + c_k b_{n-k}) \pmod 2
+b_n = \left(c_1b_{n-1}+c_2b_{n-2}+\dots+c_kb_{n-k}\right)\pmod 2.
 \]
-\textit{(Note: In binary mathematics, addition modulo 2 is equivalent to the logical XOR operation).}
+
+\textit{Note: In binary mathematics, addition modulo 2 is equivalent to the logical XOR operation.}
 
 \subsubsection{Polynomial Representation and State Shifts}
+
 This feedback relationship can be elegantly modeled using polynomials over the binary field. Let us define the characteristic polynomial $p$ and its truncated variant $\tilde{p}$ as:
 \[
-p = x^{n+1} + b_n x^n + \dots + b_1 x + b_0
+p(x)=x^n+c_{n-1}x^{n-1}+\dots+c_1x+c_0
 \]
+and
 \[
-\tilde{p} = b_n x^n + \dots + b_1 x + b_0
+\tilde{p}(x)=c_{n-1}x^{n-1}+\dots+c_1x+c_0.
 \]
-If the current state of the register is represented as a polynomial $q$:
+
+If the current state of the register is represented as a polynomial $q$, then:
 \[
-q = a_n x^n + a_{n-1}x^{n-1} + \dots + a_0
+q(x)=a_{n-1}x^{n-1}+a_{n-2}x^{n-2}+\dots+a_0.
 \]
+
 A single shift of the register corresponds to multiplying the state polynomial by the indeterminate $x$:
 \[
-x \cdot q = a_n x^{n+1} + a_{n-1}x^{n} + \dots + a_0x
+xq(x)=a_{n-1}x^n+a_{n-2}x^{n-1}+\dots+a_0x.
 \]
+
 To keep the state within the bounds of the register, we reduce this result modulo the characteristic polynomial $p$:
 \[
-xq \pmod p = xq - a_np
+xq(x)\pmod{p(x)}=xq(x)-a_{n-1}p(x).
 \]
+
 Expanding this modular reduction yields the polynomial configuration for the subsequent state:
 \[
-(a_{n-1} - b_n)x^{n} + (a_{n-2} - b_{n-1})x^{n-1} + \dots + (a_0 - b_1)x - b_0
+\begin{aligned}
+xq(x)\pmod{p(x)}
+={}&(a_{n-2}-a_{n-1}c_{n-1})x^{n-1}\\
+&+(a_{n-3}-a_{n-1}c_{n-2})x^{n-2}
++\dots\\
+&+(a_0-a_{n-1}c_1)x-a_{n-1}c_0.
+\end{aligned}
 \]
+
+Since the calculations are performed over $GF(2)$, subtraction is equivalent to addition modulo 2.
+
+This polynomial operation is adjoint to the operation of the generator. More precisely, the action of the generator on the state can be written in matrix form:
+\[
+X_n=AX_{n-1},
+\]
+where
+\[
+X_n=(b_n,b_{n-1},\dots,b_{n-k+1})^T.
+\]
+
+The operation on polynomials, written in matrix form, has the transposed matrix:
+\[
+Y_n=A^TY_{n-1}.
+\]
+
+A matrix has a maximal period if and only if its transposed matrix has a maximal period. Therefore, it is sufficient to calculate the period for the transposed matrix.
 
 \subsubsection{Algebraic Structure and Finite Fields}
-To analyze the periodicity and structural properties of the generated sequences, we look at the underlying algebraic frameworks. By the Chinese Remainder Theorem for integers, we know that if $m$ and $n$ are coprime, there exists an isomorphic mapping:
+
+To analyze the periodicity and structural properties of the generated sequences, we look at the underlying algebraic frameworks. By the Chinese Remainder Theorem for integers, we know that if $m$ and $n$ are coprime, there exists an isomorphism:
 \[
-\mathbb{Z}_{mn} \rightarrow \mathbb{Z}_m \times \mathbb{Z}_n
+\mathbb{Z}_{mn}\rightarrow\mathbb{Z}_m\times\mathbb{Z}_n,
 \]
+defined by
 \[
-k \rightarrow (k \bmod{m},\; k \bmod{n})
+k\rightarrow(k\bmod m,\;k\bmod n).
 \]
-Because $m$ and $n$ are coprime ($\gcd(m,n)=1$), this representation is a one-to-one mapping (an injection, and by cardinality, a bijection). An analogous property holds for the polynomial ring over a field $K$:
+
+Because $m$ and $n$ are coprime, meaning that $\gcd(m,n)=1$, this representation is a one-to-one mapping and, by cardinality, a bijection. An analogous property holds for the polynomial ring over a field $K$, provided that $p_1$ and $p_2$ are coprime:
 \[
-K[x]/(p_1 \cdot p_2) \cong K[x]/(p_1) \times K[x]/(p_2)
+K[x]/(p_1p_2)\cong K[x]/(p_1)\times K[x]/(p_2).
 \]
-If the characteristic polynomial $p$ is irreducible over $K = \mathbb{Z}_2$, the quotient ring forms a Galois finite field $F = K[x]/(p)$ containing exactly $2^n$ elements. For any non-zero element $y \in F \setminus \{0\}$, by Lagrange's theorem, its multiplicative order must divide the order of the group, meaning:
+
+If the characteristic polynomial $p$ of degree $n$ is irreducible over $K=\mathbb{Z}_2$, the quotient ring forms the finite field
 \[
-y^k \cdot y^{2^n-1} = 1
+F=K[x]/(p),
 \]
+containing exactly $2^n$ elements. For any non-zero element $y\in F\setminus\{0\}$, Lagrange's theorem implies that its multiplicative order divides the order of the multiplicative group. Therefore:
 \[
-y^{2^n-1} - 1 = 0 \implies \forall (y \in F \setminus \{0\}), \; y^{2^n} - y = 0
+y^{2^n-1}=1.
 \]
+
+Consequently:
+\[
+y^{2^n-1}-1=0
+\implies
+\forall y\in F\setminus\{0\},\quad y^{2^n}-y=0.
+\]
+
+The equality $y^{2^n}-y=0$ also holds for $y=0$.
 
 \subsubsection{The Role of the Least Common Multiple (LCM)}
-When analyzing elements in a direct product of structures, such as $y \in \mathbb{Z}_{t_1} \times \mathbb{Z}_{t_2}$, the periodicity of the combined system is determined by the \textit{Least Common Multiple} ($\text{lcm}$). 
 
-Mathematically, if an element $y_1$ has a period of $t_1$ (meaning $y_1^{t_1} = 1$) and an element $y_2$ has a period of $t_2$ (meaning $y_2^{t_2} = 1$), then the joint element $y = (y_1, y_2)$ will only return to the identity state when both coordinates simultaneously complete full cycles. This global period is the smallest positive integer $L$ that is a multiple of both $t_1$ and $t_2$:
+When analyzing elements in a direct product of structures, such as
 \[
-y^{\text{lcm}(t_1, t_2)} = (1, 1)
+y\in G_1\times G_2,
 \]
-If $t_1$ and $t_2$ share common factors, $\text{lcm}(t_1, t_2)$ is strictly less than their product $t_1 \cdot t_2$, shrinking the total period of the system. Maximum sequence length is only achieved when components operate at coprime periods, pushing the $\text{lcm}$ to its absolute maximum upper bound: $t_1 \cdot t_2$.
+the periodicity of the combined system is determined by the \textit{Least Common Multiple}, denoted by $\operatorname{lcm}$.
+
+Mathematically, if an element $y_1$ has a period of $t_1$, meaning that
+\[
+y_1^{t_1}=1,
+\]
+and an element $y_2$ has a period of $t_2$, meaning that
+\[
+y_2^{t_2}=1,
+\]
+then the joint element
+\[
+y=(y_1,y_2)
+\]
+will return to the identity state only when both coordinates simultaneously complete full cycles. This global period is the smallest positive integer $L$ that is a multiple of both $t_1$ and $t_2$:
+\[
+y^{\operatorname{lcm}(t_1,t_2)}=(1,1).
+\]
+
+If $t_1$ and $t_2$ share common factors, then
+\[
+\operatorname{lcm}(t_1,t_2)<t_1t_2,
+\]
+which reduces the total period of the system. The maximum sequence length is achieved when the component periods are coprime, in which case:
+\[
+\operatorname{lcm}(t_1,t_2)=t_1t_2.
+\]
 
 \subsubsection{Periodicity and Minimal Polynomials}
-To determine if an LFSR sequence can achieve maximum length, we investigate if there exists a smaller exponent $l < 2^n - 1$ such that $y^l = 1$ for all elements. If $\forall (y \in F), y^{l+1} - y = 0$, it implies that $l + 1 \geq 2^{n-1}$. 
 
-Because the multiplicative group of the finite field $F$ is cyclic, there exists a primitive generator element $y \in F$ whose successive powers $y^k$ for $k = 0, \dots, 2^n - 2$ are completely distinct and map out all non-zero elements. Let $h$ be the minimal polynomial of $y$. By definition, $h(y) = 0$, $h$ is monic, and its degree is minimal among all polynomials $g$ satisfying $g(y) = 0$. 
-
-Consequently, $h$ must be irreducible. If there exists some polynomial $g$ such that $g(y) = 0$, applying the polynomial division algorithm yields:
+To determine whether an LFSR sequence can achieve its maximum length, we investigate whether there exists a smaller exponent
 \[
-g = qh + r \quad \text{where } \deg(r) < \deg(h)
+l<2^n-1
 \]
-Evaluating this at $y$ gives $g(y) = q(y)h(y) + r(y) \implies 0 = 0 + r(y)$. Since $r(y) = 0$ and its degree is strictly less than the minimal polynomial $h$, it must hold that $r = 0$, proving that $g$ is an exact multiple of $h$ ($g = qh$).
+such that
+\[
+y^l=1
+\]
+for all non-zero elements $y\in F$.
 
-The evaluation mapping $Y \rightarrow y$ establishes an isomorphism from the quotient ring $K[Y]/(h[Y])$ to the finite field $F$. Most importantly, sequential powers of $Y$ generate every non-zero element of $K[Y]/(h[Y])$.
+If
+\[
+\forall y\in F,\quad y^{l+1}-y=0,
+\]
+then the polynomial
+\[
+g(Y)=Y^{l+1}-Y
+\]
+has all $2^n$ elements of $F$ as roots. Since a non-zero polynomial of degree $l+1$ over a field can have at most $l+1$ distinct roots, it follows that:
+\[
+l+1\geq 2^n.
+\]
 
-\textbf{Conclusion:} To achieve the maximum possible period of $2^n-1$ states without stalling or repeating early, the characteristic polynomial $P(x)$ must be a \textbf{primitive polynomial} over $GF(2)$.
+Therefore:
+\[
+l\geq 2^n-1.
+\]
 
+Because the multiplicative group of the finite field $F$ is cyclic, there exists a primitive generator element $y\in F$ whose successive powers
+\[
+y^k,\qquad k=0,\dots,2^n-2,
+\]
+are all distinct and represent all non-zero elements of $F$.
+
+Let $h$ be the minimal polynomial of $y$. By definition, $h(y)=0$, $h$ is monic, and its degree is minimal among all non-zero polynomials $g$ satisfying $g(y)=0$.
+
+Consequently, $h$ must be irreducible. If there exists some polynomial $g$ such that $g(y)=0$, applying the polynomial division algorithm yields:
+\[
+g=qh+r,
+\qquad
+\deg(r)<\deg(h).
+\]
+
+Evaluating this equality at $y$ gives:
+\[
+g(y)=q(y)h(y)+r(y)
+\implies
+0=0+r(y).
+\]
+
+Since $r(y)=0$ and the degree of $r$ is strictly less than the degree of the minimal polynomial $h$, it must follow that $r=0$. Therefore, $g$ is an exact multiple of $h$:
+\[
+g=qh.
+\]
+
+The evaluation mapping
+\[
+Y\rightarrow y
+\]
+establishes an isomorphism from the quotient ring
+\[
+K[Y]/(h(Y))
+\]
+to the finite field $F$. Most importantly, the successive powers of the residue class of $Y$ generate every non-zero element of
+\[
+K[Y]/(h(Y))
+\]
+if and only if the generator has a maximum period.
+
+\begin{definition}
+A \textbf{primitive polynomial} is an irreducible polynomial each of whose roots generates the multiplicative group of the corresponding finite field.
+\end{definition}
+
+\textbf{Conclusion:} To achieve the maximum possible period of $2^n-1$ states without entering a shorter cycle, the characteristic polynomial $p(x)$ must be a \textbf{primitive polynomial} over $GF(2)$.
 
 \subsection{Example: 4-Bit LFSR}
-Consider a 4-bit LFSR with a tap sequence at positions 3 and 4, utilizing XOR as the feedback function. 
+
+Consider a 4-bit LFSR with feedback taps at positions 3 and 4, utilizing XOR as the feedback function.
 
 \begin{table}[h]
 \centering
 \begin{tabular}{c c c c c}
 \toprule
-\textbf{a} & \textbf{b} & \textbf{c(tap)} & \textbf{d(tap)} & \textbf{Output} \\
+\textbf{a} & \textbf{b} & \textbf{c (tap)} & \textbf{d (tap)} & \textbf{Output} \\
 \midrule
 \texttt{1} & \texttt{0} & \texttt{0} & \texttt{1} & \texttt{1} \\
-\texttt{1} & \texttt{1} & \texttt{0} & \texttt{0} & \texttt{0}  \\
-\texttt{0} & \texttt{1} & \texttt{1} & \texttt{0} & \texttt{0}  \\
-\texttt{1} & \texttt{0} & \texttt{1} & \texttt{1} & \texttt{1}  \\
-\texttt{0} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{1}  \\
-\texttt{1} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{0}  \\
-\texttt{1} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{1}  \\
-\texttt{1} & \texttt{1} & \texttt{1} & \texttt{0} & \texttt{0}  \\
-\texttt{1} & \texttt{1} & \texttt{1} & \texttt{1} & \texttt{1}  \\
-\texttt{0} & \texttt{1} & \texttt{1} & \texttt{1} & \texttt{1}  \\
-\texttt{0} & \texttt{0} & \texttt{1} & \texttt{1} & \texttt{1}  \\
-\texttt{0} & \texttt{0} & \texttt{0} & \texttt{1} & \texttt{1}  \\
-\texttt{1} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0}  \\
-\texttt{0} & \texttt{1} & \texttt{0} & \texttt{0} & \texttt{0}  \\
-\texttt{0} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{0}  \\
-\texttt{1} & \texttt{0} & \texttt{0} & \texttt{1} & \texttt{1}  \\
+\texttt{1} & \texttt{1} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\texttt{0} & \texttt{1} & \texttt{1} & \texttt{0} & \texttt{0} \\
+\texttt{1} & \texttt{0} & \texttt{1} & \texttt{1} & \texttt{1} \\
+\texttt{0} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{1} \\
+\texttt{1} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{0} \\
+\texttt{1} & \texttt{1} & \texttt{0} & \texttt{1} & \texttt{1} \\
+\texttt{1} & \texttt{1} & \texttt{1} & \texttt{0} & \texttt{0} \\
+\texttt{1} & \texttt{1} & \texttt{1} & \texttt{1} & \texttt{1} \\
+\texttt{0} & \texttt{1} & \texttt{1} & \texttt{1} & \texttt{1} \\
+\texttt{0} & \texttt{0} & \texttt{1} & \texttt{1} & \texttt{1} \\
+\texttt{0} & \texttt{0} & \texttt{0} & \texttt{1} & \texttt{1} \\
+\texttt{1} & \texttt{0} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\texttt{0} & \texttt{1} & \texttt{0} & \texttt{0} & \texttt{0} \\
+\texttt{0} & \texttt{0} & \texttt{1} & \texttt{0} & \texttt{0} \\
+\texttt{1} & \texttt{0} & \texttt{0} & \texttt{1} & \texttt{1} \\
 \bottomrule
 \end{tabular}
-\caption{Example of 4-bit LFSR with taps c, b}
+\caption{Example of a 4-bit LFSR with taps $c$ and $d$}
 \end{table}
+
+The final row repeats the initial state, showing that the LFSR returns to its starting configuration after visiting all $2^4-1=15$ non-zero states.
+
 
 \subsection{LFSR C++ Implementation}
 

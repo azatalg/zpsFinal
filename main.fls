@@ -1,6 +1,6 @@
-PWD C:\Users\Azatal\Desktop\prng_report_final_package
+PWD c:\Users\Azatal\Desktop\zpsFinal
 INPUT C:\Users\Azatal\AppData\Local\MiKTeX\miktex\data\le\pdftex\pdflatex.fmt
-INPUT main.tex
+INPUT c:\Users\Azatal\Desktop\zpsFinal\main.tex
 OUTPUT main.log
 INPUT .\preamble.tex
 INPUT .\preamble.tex
@@ -524,6 +524,7 @@ INPUT .\chapters\chapter3.tex
 INPUT .\chapters\chapter3.tex
 INPUT .\chapters\chapter3.tex
 INPUT chapters\chapter3.tex
+INPUT C:\Users\Azatal\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\codes\lfsr\lfsr_next.cpp
 INPUT .\codes\lfsr\lfsr_next.cpp
 INPUT codes\lfsr\lfsr_next.cpp
@@ -680,7 +681,6 @@ INPUT .\chapters\chapter4.tex
 INPUT .\chapters\chapter4.tex
 INPUT chapters\chapter4.tex
 INPUT C:\Users\Azatal\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathex.enc
-INPUT C:\Users\Azatal\AppData\Local\Programs\MiKTeX\fonts\tfm\public\lm\ec-lmbxi10.tfm
 INPUT .\codes\mersenne_twister\mt19937_next.cpp
 INPUT .\codes\mersenne_twister\mt19937_next.cpp
 INPUT codes\mersenne_twister\mt19937_next.cpp

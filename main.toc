@@ -31,40 +31,40 @@
 \contentsline {subsubsection}{\numberline {3.2.2}Polynomial Representation and State Shifts}{18}{subsubsection.3.2.2}%
 \contentsline {subsubsection}{\numberline {3.2.3}Algebraic Structure and Finite Fields}{19}{subsubsection.3.2.3}%
 \contentsline {subsubsection}{\numberline {3.2.4}The Role of the Least Common Multiple (LCM)}{20}{subsubsection.3.2.4}%
-\contentsline {subsubsection}{\numberline {3.2.5}Periodicity and Minimal Polynomials}{20}{subsubsection.3.2.5}%
-\contentsline {subsection}{\numberline {3.3}Example: 4-Bit LFSR}{21}{subsection.3.3}%
-\contentsline {subsection}{\numberline {3.4}LFSR C++ Implementation}{21}{subsection.3.4}%
-\contentsline {subsection}{\numberline {3.5}LFSR Experimental Comparison}{22}{subsection.3.5}%
+\contentsline {subsubsection}{\numberline {3.2.5}Periodicity and Minimal Polynomials}{21}{subsubsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.3}Example: 4-Bit LFSR}{22}{subsection.3.3}%
+\contentsline {subsection}{\numberline {3.4}LFSR C++ Implementation}{23}{subsection.3.4}%
+\contentsline {subsection}{\numberline {3.5}LFSR Experimental Comparison}{24}{subsection.3.5}%
 \contentsline {subsection}{\numberline {3.6}Lagged Fibonacci Generator (LFG)}{26}{subsection.3.6}%
-\contentsline {subsection}{\numberline {3.7}LFG C++ Implementation}{26}{subsection.3.7}%
-\contentsline {subsection}{\numberline {3.8}LFG Experimental Comparison}{27}{subsection.3.8}%
-\contentsline {section}{\numberline {4}The Mersenne Twister: High-Dimensional Equidistribution}{30}{section.4}%
-\contentsline {subsection}{\numberline {4.1}The Twisted Generalized Feedback Shift Register (TGFSR)}{30}{subsection.4.1}%
-\contentsline {subsection}{\numberline {4.2}The Twist}{30}{subsection.4.2}%
-\contentsline {subsection}{\numberline {4.3}Tempering: Guaranteeing Equidistribution}{31}{subsection.4.3}%
-\contentsline {subsection}{\numberline {4.4}Periodicity and Mersenne Primes}{32}{subsection.4.4}%
-\contentsline {subsection}{\numberline {4.5}Variants of the Mersenne Twister}{32}{subsection.4.5}%
-\contentsline {subsubsection}{\numberline {4.5.1}The MT19937 Variant}{32}{subsubsection.4.5.1}%
-\contentsline {subsubsection}{\numberline {4.5.2}Other variants of the MT}{33}{subsubsection.4.5.2}%
-\contentsline {subsection}{\numberline {4.6}C++ Implementation}{33}{subsection.4.6}%
-\contentsline {subsection}{\numberline {4.7}Experimental Comparison}{35}{subsection.4.7}%
-\contentsline {subsection}{\numberline {4.8}Plots and Interpretation}{36}{subsection.4.8}%
-\contentsline {section}{\numberline {5}Modern Pseudorandom Number Generators}{40}{section.5}%
-\contentsline {subsection}{\numberline {5.1}The Xorshift}{40}{subsection.5.1}%
-\contentsline {subsubsection}{\numberline {5.1.1}The Recurrence Relation}{40}{subsubsection.5.1.1}%
-\contentsline {subsubsection}{\numberline {5.1.2}Matrix Representation and Periodicity}{40}{subsubsection.5.1.2}%
-\contentsline {subsubsection}{\numberline {5.1.3}Variants of the Xorshift}{41}{subsubsection.5.1.3}%
-\contentsline {subsubsection}{\numberline {5.1.4}C++ Implementation of Xorshift}{41}{subsubsection.5.1.4}%
-\contentsline {subsubsection}{\numberline {5.1.5}Experimental Comparison of Xorshift}{42}{subsubsection.5.1.5}%
-\contentsline {subsection}{\numberline {5.2}The PCG}{44}{subsection.5.2}%
-\contentsline {subsubsection}{\numberline {5.2.1}Representation and Periodicity}{44}{subsubsection.5.2.1}%
-\contentsline {subsubsection}{\numberline {5.2.2}Popular variants of the PCG Framework}{45}{subsubsection.5.2.2}%
-\contentsline {subsubsection}{\numberline {5.2.3}C++ Implementation of PCG}{45}{subsubsection.5.2.3}%
-\contentsline {subsubsection}{\numberline {5.2.4}Experimental Comparison of PCG}{46}{subsubsection.5.2.4}%
-\contentsline {section}{\numberline {6}Conclusion and Comparison of PRNG Methods}{49}{section.6}%
-\contentsline {subsection}{\numberline {6.1}General Comparison Criteria}{49}{subsection.6.1}%
-\contentsline {subsection}{\numberline {6.2}Classical Generators}{49}{subsection.6.2}%
-\contentsline {subsection}{\numberline {6.3}Recursive and Shift-Based Generators}{50}{subsection.6.3}%
-\contentsline {subsection}{\numberline {6.4}Modern High-Quality Generators}{50}{subsection.6.4}%
-\contentsline {subsection}{\numberline {6.5}Trade-offs Between Methods}{50}{subsection.6.5}%
-\contentsline {subsection}{\numberline {6.6}Final Remarks}{51}{subsection.6.6}%
+\contentsline {subsection}{\numberline {3.7}LFG C++ Implementation}{27}{subsection.3.7}%
+\contentsline {subsection}{\numberline {3.8}LFG Experimental Comparison}{28}{subsection.3.8}%
+\contentsline {section}{\numberline {4}The Mersenne Twister: High-Dimensional Equidistribution}{33}{section.4}%
+\contentsline {subsection}{\numberline {4.1}The Twisted Generalized Feedback Shift Register (TGFSR)}{33}{subsection.4.1}%
+\contentsline {subsection}{\numberline {4.2}The Twist}{33}{subsection.4.2}%
+\contentsline {subsection}{\numberline {4.3}Tempering: Guaranteeing Equidistribution}{34}{subsection.4.3}%
+\contentsline {subsection}{\numberline {4.4}Periodicity and Mersenne Primes}{34}{subsection.4.4}%
+\contentsline {subsection}{\numberline {4.5}Variants of the Mersenne Twister}{35}{subsection.4.5}%
+\contentsline {subsubsection}{\numberline {4.5.1}The MT19937 Variant}{35}{subsubsection.4.5.1}%
+\contentsline {subsubsection}{\numberline {4.5.2}Other variants of the MT}{35}{subsubsection.4.5.2}%
+\contentsline {subsection}{\numberline {4.6}C++ Implementation}{36}{subsection.4.6}%
+\contentsline {subsection}{\numberline {4.7}Experimental Comparison}{37}{subsection.4.7}%
+\contentsline {subsection}{\numberline {4.8}Plots and Interpretation}{38}{subsection.4.8}%
+\contentsline {section}{\numberline {5}Modern Pseudorandom Number Generators}{42}{section.5}%
+\contentsline {subsection}{\numberline {5.1}The Xorshift}{42}{subsection.5.1}%
+\contentsline {subsubsection}{\numberline {5.1.1}The Recurrence Relation}{42}{subsubsection.5.1.1}%
+\contentsline {subsubsection}{\numberline {5.1.2}Matrix Representation and Periodicity}{42}{subsubsection.5.1.2}%
+\contentsline {subsubsection}{\numberline {5.1.3}Variants of the Xorshift}{43}{subsubsection.5.1.3}%
+\contentsline {subsubsection}{\numberline {5.1.4}C++ Implementation of Xorshift}{43}{subsubsection.5.1.4}%
+\contentsline {subsubsection}{\numberline {5.1.5}Experimental Comparison of Xorshift}{44}{subsubsection.5.1.5}%
+\contentsline {subsection}{\numberline {5.2}The PCG}{46}{subsection.5.2}%
+\contentsline {subsubsection}{\numberline {5.2.1}Representation and Periodicity}{46}{subsubsection.5.2.1}%
+\contentsline {subsubsection}{\numberline {5.2.2}Popular variants of the PCG Framework}{47}{subsubsection.5.2.2}%
+\contentsline {subsubsection}{\numberline {5.2.3}C++ Implementation of PCG}{47}{subsubsection.5.2.3}%
+\contentsline {subsubsection}{\numberline {5.2.4}Experimental Comparison of PCG}{48}{subsubsection.5.2.4}%
+\contentsline {section}{\numberline {6}Conclusion and Comparison of PRNG Methods}{51}{section.6}%
+\contentsline {subsection}{\numberline {6.1}General Comparison Criteria}{51}{subsection.6.1}%
+\contentsline {subsection}{\numberline {6.2}Classical Generators}{51}{subsection.6.2}%
+\contentsline {subsection}{\numberline {6.3}Recursive and Shift-Based Generators}{52}{subsection.6.3}%
+\contentsline {subsection}{\numberline {6.4}Modern High-Quality Generators}{52}{subsection.6.4}%
+\contentsline {subsection}{\numberline {6.5}Trade-offs Between Methods}{52}{subsection.6.5}%
+\contentsline {subsection}{\numberline {6.6}Final Remarks}{53}{subsection.6.6}%
